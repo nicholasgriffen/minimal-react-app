@@ -1,0 +1,32 @@
+{
+  "name": "triplebyte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "node server/test/index.js",
+    "start": "node server/index.js",
+    "dev": "cd server && nodemon server/index.js",
+    "bundle": "webpack",
+    "transpile": "./node_modules/.bin/babel client --out-dir transpiled",
+    "build": "npm run transpile && npm run bundle && copy dist\\main.js server\\public\\index.js /Y"
+  },
+  "author": "nicholasgriffen",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.4.2",
+    "nodemon": "^1.18.11",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
