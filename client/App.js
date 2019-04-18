@@ -2,9 +2,6 @@ import React from 'react'
 import Error from './Error'
 import Column from './Column'
 
-//render a board with 4 columns
-// columns a component 
-
 export default class extends React.Component {
   constructor() {
     super()
