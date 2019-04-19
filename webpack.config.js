@@ -1,3 +1,4 @@
 module.exports = {
-  entry: './transpiled/index.js'
+  entry: './transpiled/index.js', 
+  watch: true
 }
